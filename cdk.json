@@ -1,6 +1,3 @@
 {
-  "app": "npx ts-node bin/aws-es-and-reverse-proxy.ts",
-  "context": {
-    "@aws-cdk/core:enableStackNameDuplicates": "true"
-  }
+  "app": "npx ts-node bin/aws-es-and-reverse-proxy.ts"
 }

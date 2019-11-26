@@ -1,0 +1,11 @@
+server {
+
+    server_name localhost;
+
+    location / {
+        resolver 169.254.169.253 valid=60s;
+        set $endpoint ${ENDPOINT};
+
+        proxy_pass ${SCHEMA}://$endpoint;
+    }
+}
